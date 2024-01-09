@@ -1,0 +1,62 @@
+{
+    "version":"0.1.0", 
+    "schemaVersion": "0.0.2",
+    "name": "Glioblastoma_Fatigue",
+    "healthIssues": [
+    "cancer", "epilepsy", "seizure", "fatigue"
+ ],
+ "protocols":[
+    {
+        "name":"fatigue_questionnaire",
+        "showIntroduction": true,
+        "questionnaire" : {
+            "repository": "https://github.com/NeuroTech-Platform/RADAR-REDCap-aRMT-Definitions",
+            "name": "Fatigue Questionnaire",
+            "avsc": "questionnaire"
+        },
+        "startText": {
+            "fr": "Bonjour ! Bienvenue dans votre questionnaire quotidien relatif à la fatigue et à l'épilepsie. N'oubliez pas de mettre votre montre à charger !"
+        },
+        "endText" : {
+            "fr": "Merci de votre pariticipation ! N'oubliez pas d'appuyer sur le bouton 'Terminer'! À demain, à la même heure !"
+        },
+        "estimatedCompletionTime": "1 minute",
+        "protocol":{
+            "repeatProtocol": {
+               "unit": "day",
+                  "amount": 1
+               },
+               "repeatQuestionnaire": {
+                  "unit": "hours",
+                  "unitsFromZero": [
+                     18
+                  ]
+               },
+
+               "reminders":[ 
+                {
+                  "offset": {
+                  "unit": "min",
+                  "amount": 20,
+                  "repeat": 3
+                }, 
+
+               "notification" : 
+               {
+                "title": {
+                  "fr": "Vous avez manqué votre quetionnaire sur la fatigue ?"
+                },
+                "text": {
+                  "fr": "Il semblerait que vous ayez oublié de répondre à votre questionnaire sur la fatigue. Ce n'est pas grave, vous pouvez encore le faire ! N'oubliez pas de mettre votre montre à charger !"
+                   } 
+                }
+                }
+            ],
+               "completionWindow": {
+                  "unit": "hours",
+                  "amount": 15
+               }
+            }
+          }
+        ]
+}
