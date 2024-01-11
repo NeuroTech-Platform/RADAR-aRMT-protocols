@@ -1,55 +1,70 @@
 {
-    "version":"0.1.0", 
+    "version": "0.1.0",
     "schemaVersion": "0.0.2",
     "name": "Glioblastoma_Fatigue",
     "healthIssues": ["cancer", "epilepsy", "seizure", "fatigue"],
     "protocols": [
-        {
-            "name":"Fatigue questionnaire",
-            "showIntroduction": true,
-            "questionnaire" : {
-                "repository": "https://github.com/NeuroTech-Platform/RADAR-REDCap-aRMT-Definitions/tree/master/questionnaires",
-                "name": "fatigue_questionnaire",
-                "avsc": "questionnaire"
+      {
+        "name": "Fatigue questionnaire",
+        "showIntroduction": true,
+        "isDemo": false,
+        "questionnaire": {
+          "repository": "https://github.com/NeuroTech-Platform/RADAR-REDCap-aRMT-Definitions/tree/master/questionnaires/",
+          "name": "fatigue_questionnaire",
+          "avsc": "questionnaire"
+        },
+        "startText": {
+          "en": "Bonjour ! Bienvenue dans votre questionnaire quotidien relatif à la fatigue et à l'épilepsie. N'oubliez pas de mettre votre montre à charger !",
+          "it": "",
+          "nl": "",
+          "da": "",
+          "de": "",
+          "es": ""
+        },
+        "endText": {
+          "en": "Merci de votre pariticipation ! N'oubliez pas d'appuyer sur le bouton 'Terminer'! À demain, à la même heure !",
+          "it": "",
+          "nl": "",
+          "da": "",
+          "de": "",
+          "es": ""
+        },
+        "warn": {
+          "en": "",
+          "it": "",
+          "nl": "",
+          "da": "",
+          "de": "",
+          "es": ""
+        },
+        "estimatedCompletionTime": 1,
+        "protocol": {
+          "repeatProtocol": {
+            "unit": "day",
+            "amount": 1
+          },
+          "repeatQuestionnaire": {
+            "unit": "hours",
+            "unitsFromZero": [18]
+          },
+          "reminders": {
+            "unit": "min",
+            "amount": 20,
+            "repeat": 3
+          },
+          "completionWindow": {
+            "unit": "hours",
+            "amount": 15
+          },
+          "notification": {
+            "title": {
+              "en": "Vous avez manqué votre quetionnaire sur la fatigue ?"
             },
-            "startText": {
-                "fr": "Bonjour ! Bienvenue dans votre questionnaire quotidien relatif à la fatigue et à l'épilepsie. N'oubliez pas de mettre votre montre à charger !"
-            },
-            "endText" : {
-                "fr": "Merci de votre pariticipation ! N'oubliez pas d'appuyer sur le bouton 'Terminer'! À demain, à la même heure !"
-            },
-            "estimatedCompletionTime": "1 minute",
-            "protocol":{
-                "repeatProtocol": {
-                    "unit": "day",
-                    "amount": 1
-                },
-               "repeatQuestionnaire": {
-                  "unit": "hours",
-                  "unitsFromZero": [18]
-               },
-
-               "reminders": {
-                  "offset": {
-                  "unit": "min",
-                  "amount": 20,
-                  "repeat": 3
-                  }, 
-
-               "notification" : {
-                   "title": {
-                       "fr": "Vous avez manqué votre quetionnaire sur la fatigue ?"
-                       },
-                   "text": {
-                       "fr": "Il semblerait que vous ayez oublié de répondre à votre questionnaire sur la fatigue. Ce n'est pas grave, vous pouvez encore le faire ! N'oubliez pas de mettre votre montre à charger !"
-                   }
-               }
-               },
-                "completionWindow": {
-                    "unit": "hours",
-                    "amount": 15
-                }
+            "text": {
+              "en": "Il semblerait que vous ayez oublié de répondre à votre questionnaire sur la fatigue. Ce n'est pas grave, vous pouvez encore le faire ! N'oubliez pas de mettre votre montre à charger !"
             }
+          }
         }
+      }      
     ]
-}
+  }
