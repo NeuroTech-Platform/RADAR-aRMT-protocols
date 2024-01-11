@@ -8,7 +8,7 @@
             "name":"Fatigue questionnaire",
             "showIntroduction": true,
             "questionnaire" : {
-                "repository": "https://github.com/NeuroTech-Platform/RADAR-REDCap-aRMT-Definitions",
+                "repository": "https://github.com/NeuroTech-Platform/RADAR-REDCap-aRMT-Definitions/tree/master/questionnaires",
                 "name": "fatigue_questionnaire",
                 "avsc": "questionnaire"
             },
