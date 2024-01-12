@@ -48,8 +48,8 @@
             "amount": 1
           },
           "repeatQuestionnaire": {
-            "unit": "hours",
-            "unitsFromZero": [11]
+            "unit": "min",
+            "unitsFromZero": [660]
           },
           "reminders": {
             "unit": "min",
@@ -57,7 +57,7 @@
             "repeat": 3
           },
           "completionWindow": {
-            "unit": "hours",
+            "unit": "hour",
             "amount": 15
           },
           "notification": {
