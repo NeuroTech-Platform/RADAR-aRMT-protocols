@@ -39,13 +39,17 @@
         },
         "estimatedCompletionTime": 1,
         "protocol": {
+            "referenceTimestamp": {
+                "timestamp": "2024-01-01",
+                "format": "date"
+            },
           "repeatProtocol": {
             "unit": "day",
             "amount": 1
           },
           "repeatQuestionnaire": {
             "unit": "hours",
-            "unitsFromZero": [10.5]
+            "unitsFromZero": [11]
           },
           "reminders": {
             "unit": "min",
