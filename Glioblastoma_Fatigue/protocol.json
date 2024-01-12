@@ -49,7 +49,7 @@
           },
           "repeatQuestionnaire": {
             "unit": "min",
-            "unitsFromZero": [813]
+            "unitsFromZero": [1080]
           },
           "reminders": {
             "unit": "min",
@@ -62,7 +62,7 @@
           },
           "notification": {
             "title": {
-              "en": "Vous avez manqué votre quetionnaire sur la fatigue ?"
+              "en": "Il est temps de remplir votre quetionnaire sur la fatigue !"
             },
             "text": {
               "en": "Il semblerait que vous ayez oublié de répondre à votre questionnaire sur la fatigue. Ce n'est pas grave, vous pouvez encore le faire ! N'oubliez pas de mettre votre montre à charger !"
