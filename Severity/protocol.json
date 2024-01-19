@@ -14,7 +14,7 @@
         "repository": "https://raw.githubusercontent.com/NeuroTech-Platform/RADAR-REDCap-aRMT-Definitions/master/questionnaires/",
         "name": "severity_baseline",
         "avsc": "notification"
-      },
+        },
       "startText": {
         "en": "",
         "it": "",
@@ -41,6 +41,10 @@
       },
       "estimatedCompletionTime": 5,
       "protocol": {
+        "referenceTimestamp": {
+            "timestamp": "2024-01-01",
+            "format": "date"
+        },
         "repeatProtocol": {
           "unit": "year",
           "amount": 9999
@@ -97,6 +101,10 @@
       },
       "estimatedCompletionTime": 1,
       "protocol": {
+        "referenceTimestamp": {
+            "timestamp": "2024-01-01",
+            "format": "date"
+        },
         "repeatProtocol": {
           "unit": "year",
           "amount": 9999
