@@ -12,7 +12,7 @@
       "order": 0,
       "questionnaire": {
         "repository": "https://raw.githubusercontent.com/NeuroTech-Platform/RADAR-REDCap-aRMT-Definitions/master/questionnaires/",
-        "name": "severity_diary",
+        "name": "severity_baseline",
         "avsc": "notification"
         },
       "startText": {
