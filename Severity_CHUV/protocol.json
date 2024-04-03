@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
   "schemaVersion": "0.0.1",
-  "name": "Severity_Kinderspital",
+  "name": "Severity_CHUV",
   "healthIssues": ["Epilepsy"],
   "protocols": [
     {
